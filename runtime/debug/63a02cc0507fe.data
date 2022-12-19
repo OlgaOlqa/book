@@ -1,0 +1,1216 @@
+a:10:{s:6:"config";s:1559:"a:5:{s:10:"phpVersion";s:5:"8.1.9";s:10:"yiiVersion";s:6:"2.0.47";s:11:"application";a:8:{s:3:"yii";s:6:"2.0.47";s:4:"name";s:14:"My Application";s:7:"version";s:3:"1.0";s:8:"language";s:5:"en-US";s:14:"sourceLanguage";s:5:"en-US";s:7:"charset";s:5:"UTF-8";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:5:{s:7:"version";s:5:"8.1.9";s:6:"xdebug";b:0;s:3:"apc";b:0;s:8:"memcache";b:0;s:9:"memcached";b:0;}s:10:"extensions";a:5:{s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:63:"C:\OSPanel\domains\localhost\book\vendor/yiisoft/yii2-faker/src";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:8:"2.1.21.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:63:"C:\OSPanel\domains\localhost\book\vendor/yiisoft/yii2-debug/src";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.2.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:61:"C:\OSPanel\domains\localhost\book\vendor/yiisoft/yii2-gii/src";}}s:26:"yiisoft/yii2-symfonymailer";a:3:{s:4:"name";s:26:"yiisoft/yii2-symfonymailer";s:7:"version";s:7:"2.0.4.0";s:5:"alias";a:1:{s:18:"@yii/symfonymailer";s:71:"C:\OSPanel\domains\localhost\book\vendor/yiisoft/yii2-symfonymailer/src";}}s:23:"yiisoft/yii2-bootstrap5";a:4:{s:4:"name";s:23:"yiisoft/yii2-bootstrap5";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:15:"@yii/bootstrap5";s:68:"C:\OSPanel\domains\localhost\book\vendor/yiisoft/yii2-bootstrap5/src";}s:9:"bootstrap";s:40:"yii\bootstrap5\i18n\TranslationBootstrap";}}}";s:3:"log";s:25902:"a:1:{s:8:"messages";a:89:{i:0;a:6:{i:0;s:68:"Bootstrap with yii\bootstrap5\i18n\TranslationBootstrap::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1671441600.31075;i:4;a:0:{}i:5;i:2032920;}i:1;a:6:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1671441600.313981;i:4;a:0:{}i:5;i:2222792;}i:2;a:6:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1671441600.313997;i:4;a:0:{}i:5;i:2223216;}i:3;a:6:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1671441600.315342;i:4;a:0:{}i:5;i:2249616;}i:4;a:6:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1671441600.31536;i:4;a:0:{}i:5;i:2250792;}i:5;a:6:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1671441600.328616;i:4;a:0:{}i:5;i:2743840;}i:6;a:6:{i:0;s:27:"Route to run: migrate/fresh";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1671441600.346938;i:4;a:0:{}i:5;i:3511368;}i:7;a:6:{i:0;s:72:"Running action: yii\console\controllers\MigrateController::actionFresh()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1671441600.353887;i:4;a:0:{}i:5;i:4023912;}i:8;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.039176;i:4;a:0:{}i:5;i:4357672;}i:9;a:6:{i:0;s:55:"Opening DB connection: mysql:host=localhost;dbname=book";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1671441602.03921;i:4;a:0:{}i:5;i:4424072;}i:14;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `category`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.059377;i:4;a:0:{}i:5;i:4476408;}i:17;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'category' AND `kcu`.`TABLE_NAME` = 'category'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.063237;i:4;a:0:{}i:5;i:4505392;}i:20;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `comment`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.101581;i:4;a:0:{}i:5;i:4506024;}i:23;a:6:{i:0;s:770:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'comment' AND `kcu`.`TABLE_NAME` = 'comment'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.103689;i:4;a:0:{}i:5;i:4511848;}i:26;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.105784;i:4;a:0:{}i:5;i:4513504;}i:29;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.108228;i:4;a:0:{}i:5;i:4518568;}i:32;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `post`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.110501;i:4;a:0:{}i:5;i:4518816;}i:35;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post' AND `kcu`.`TABLE_NAME` = 'post'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.113161;i:4;a:0:{}i:5;i:4527488;}i:38;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `post_tag`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.115259;i:4;a:0:{}i:5;i:4529152;}i:41;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post_tag' AND `kcu`.`TABLE_NAME` = 'post_tag'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.11736;i:4;a:0:{}i:5;i:4534584;}i:44;a:6:{i:0;s:28:"SHOW FULL COLUMNS FROM `tag`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.119432;i:4;a:0:{}i:5;i:4536216;}i:47;a:6:{i:0;s:762:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tag' AND `kcu`.`TABLE_NAME` = 'tag'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.121511;i:4;a:0:{}i:5;i:4541272;}i:50;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.123528;i:4;a:0:{}i:5;i:4541520;}i:53;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user' AND `kcu`.`TABLE_NAME` = 'user'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.126639;i:4;a:0:{}i:5;i:4547768;}i:56;a:6:{i:0;s:56:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post-user_id`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.136466;i:4;a:0:{}i:5;i:4905816;}i:59;a:6:{i:0;s:51:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post_id`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.149788;i:4;a:0:{}i:5;i:4905976;}i:62;a:6:{i:0;s:49:"ALTER TABLE `post` DROP FOREIGN KEY `category_id`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.161117;i:4;a:0:{}i:5;i:4907256;}i:65;a:6:{i:0;s:45:"ALTER TABLE `post` DROP FOREIGN KEY `user_id`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.188092;i:4;a:0:{}i:5;i:4913760;}i:68;a:6:{i:0;s:49:"ALTER TABLE `post_tag` DROP FOREIGN KEY `post_id`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.207249;i:4;a:0:{}i:5;i:4915048;}i:71;a:6:{i:0;s:48:"ALTER TABLE `post_tag` DROP FOREIGN KEY `tag_id`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.21968;i:4;a:0:{}i:5;i:4915920;}i:74;a:6:{i:0;s:21:"DROP TABLE `category`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.234859;i:4;a:0:{}i:5;i:4917136;}i:77;a:6:{i:0;s:20:"DROP TABLE `comment`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.271988;i:4;a:0:{}i:5;i:4917896;}i:80;a:6:{i:0;s:22:"DROP TABLE `migration`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.282885;i:4;a:0:{}i:5;i:4919112;}i:83;a:6:{i:0;s:17:"DROP TABLE `post`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.292532;i:4;a:0:{}i:5;i:4919912;}i:86;a:6:{i:0;s:21:"DROP TABLE `post_tag`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.30736;i:4;a:0:{}i:5;i:4921088;}i:89;a:6:{i:0;s:16:"DROP TABLE `tag`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.317574;i:4;a:0:{}i:5;i:4922296;}i:92;a:6:{i:0;s:17:"DROP TABLE `user`";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.332846;i:4;a:0:{}i:5;i:4923128;}i:95;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.349141;i:4;a:0:{}i:5;i:4903136;}i:98;a:6:{i:0;s:96:"CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.351547;i:4;a:0:{}i:5;i:4911536;}i:101;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.447627;i:4;a:0:{}i:5;i:4913224;}i:104;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.450796;i:4;a:0:{}i:5;i:4918288;}i:107;a:6:{i:0;s:92:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1671441602)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.464802;i:4;a:0:{}i:5;i:4919352;}i:110;a:6:{i:0;s:90:"SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.470412;i:4;a:0:{}i:5;i:5156032;}i:113;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.475981;i:4;a:0:{}i:5;i:5247712;}i:116;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.478259;i:4;a:0:{}i:5;i:5252776;}i:119;a:6:{i:0;s:17:"Begin transaction";i:1;i:8;i:2;s:25:"yii\db\Transaction::begin";i:3;d:1671441603.17025;i:4;a:0:{}i:5;i:5380832;}i:120;a:6:{i:0;s:179:"CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(256),
+	`email` varchar(256),
+	`password` varchar(256),
+	`is_admin` int(11) DEFAULT 0
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.172702;i:4;a:0:{}i:5;i:5491552;}i:123;a:6:{i:0;s:18:"Commit transaction";i:1;i:8;i:2;s:26:"yii\db\Transaction::commit";i:3;d:1671441603.349475;i:4;a:0:{}i:5;i:5490760;}i:124;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.349626;i:4;a:0:{}i:5;i:5493176;}i:127;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.351944;i:4;a:0:{}i:5;i:5498240;}i:130;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135215_create_user_table', 1671441603)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.353988;i:4;a:0:{}i:5;i:5503432;}i:133;a:6:{i:0;s:17:"Begin transaction";i:1;i:8;i:2;s:25:"yii\db\Transaction::begin";i:3;d:1671441603.35817;i:4;a:0:{}i:5;i:5510528;}i:134;a:6:{i:0;s:99:"CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.35884;i:4;a:0:{}i:5;i:5512728;}i:137;a:6:{i:0;s:18:"Commit transaction";i:1;i:8;i:2;s:26:"yii\db\Transaction::commit";i:3;d:1671441603.450393;i:4;a:0:{}i:5;i:5512704;}i:138;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.450521;i:4;a:0:{}i:5;i:5515120;}i:141;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.452636;i:4;a:0:{}i:5;i:5520184;}i:144;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135317_create_category_table', 1671441603)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.45449;i:4;a:0:{}i:5;i:5521280;}i:147;a:6:{i:0;s:17:"Begin transaction";i:1;i:8;i:2;s:25:"yii\db\Transaction::begin";i:3;d:1671441603.456959;i:4;a:0:{}i:5;i:5530480;}i:148;a:6:{i:0;s:243:"CREATE TABLE `post` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(256),
+	`description` varchar(256),
+	`image` varchar(256),
+	`date` date,
+	`viewed` int(11),
+	`user_id` int(11) NOT NULL,
+	`category_id` int(11) NOT NULL
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.457614;i:4;a:0:{}i:5;i:5535496;}i:151;a:6:{i:0;s:104:"ALTER TABLE `post` ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.571308;i:4;a:0:{}i:5;i:5534416;}i:154;a:6:{i:0;s:92:"ALTER TABLE `post` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.757982;i:4;a:0:{}i:5;i:5535712;}i:157;a:6:{i:0;s:18:"Commit transaction";i:1;i:8;i:2;s:26:"yii\db\Transaction::commit";i:3;d:1671441603.965258;i:4;a:0:{}i:5;i:5536520;}i:158;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.965392;i:4;a:0:{}i:5;i:5538936;}i:161;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.967904;i:4;a:0:{}i:5;i:5543960;}i:164;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135336_create_post_table', 1671441603)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.969802;i:4;a:0:{}i:5;i:5545056;}i:167;a:6:{i:0;s:17:"Begin transaction";i:1;i:8;i:2;s:25:"yii\db\Transaction::begin";i:3;d:1671441603.971865;i:4;a:0:{}i:5;i:5552128;}i:168;a:6:{i:0;s:94:"CREATE TABLE `tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.97251;i:4;a:0:{}i:5;i:5554920;}i:171;a:6:{i:0;s:18:"Commit transaction";i:1;i:8;i:2;s:26:"yii\db\Transaction::commit";i:3;d:1671441604.075812;i:4;a:0:{}i:5;i:5554896;}i:172;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.075944;i:4;a:0:{}i:5;i:5557312;}i:175;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.078449;i:4;a:0:{}i:5;i:5562376;}i:178;a:6:{i:0;s:104:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135350_create_tag_table', 1671441604)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.08048;i:4;a:0:{}i:5;i:5563472;}i:181;a:6:{i:0;s:17:"Begin transaction";i:1;i:8;i:2;s:25:"yii\db\Transaction::begin";i:3;d:1671441604.082704;i:4;a:0:{}i:5;i:5572712;}i:182;a:6:{i:0;s:138:"CREATE TABLE `comment` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`text` varchar(256),
+	`user_id` int(11),
+	`post_id` int(11)
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.083373;i:4;a:0:{}i:5;i:5575488;}i:185;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-user_id` (`user_id`)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.185496;i:4;a:0:{}i:5;i:5575408;}i:188;a:6:{i:0;s:121:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post-user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.285716;i:4;a:0:{}i:5;i:5576736;}i:191;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-post_id` (`post_id`)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.455586;i:4;a:0:{}i:5;i:5578000;}i:194;a:6:{i:0;s:116:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.502966;i:4;a:0:{}i:5;i:5579288;}i:197;a:6:{i:0;s:18:"Commit transaction";i:1;i:8;i:2;s:26:"yii\db\Transaction::commit";i:3;d:1671441604.686122;i:4;a:0:{}i:5;i:5580096;}i:198;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.686264;i:4;a:0:{}i:5;i:5582512;}i:201;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.688766;i:4;a:0:{}i:5;i:5587536;}i:204;a:6:{i:0;s:108:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135402_create_comment_table', 1671441604)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.690671;i:4;a:0:{}i:5;i:5588632;}i:207;a:6:{i:0;s:17:"Begin transaction";i:1;i:8;i:2;s:25:"yii\db\Transaction::begin";i:3;d:1671441604.69276;i:4;a:0:{}i:5;i:5599256;}i:208;a:6:{i:0;s:116:"CREATE TABLE `post_tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`post_id` int(11),
+	`tag_id` int(11)
+)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.693418;i:4;a:0:{}i:5;i:5601712;}i:211;a:6:{i:0;s:96:"ALTER TABLE `post_tag` ADD CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.803882;i:4;a:0:{}i:5;i:5601880;}i:214;a:6:{i:0;s:93:"ALTER TABLE `post_tag` ADD CONSTRAINT `tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.905582;i:4;a:0:{}i:5;i:5603176;}i:217;a:6:{i:0;s:18:"Commit transaction";i:1;i:8;i:2;s:26:"yii\db\Transaction::commit";i:3;d:1671441605.077325;i:4;a:0:{}i:5;i:5603984;}i:218;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.077506;i:4;a:0:{}i:5;i:5606400;}i:221;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.080004;i:4;a:0:{}i:5;i:5611424;}i:224;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221213_130942_create_post_tag_table', 1671441605)";i:1;i:4;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.082008;i:4;a:0:{}i:5;i:5612520;}}}";s:9:"profiling";s:46165:"a:3:{s:6:"memory";i:5667864;s:4:"time";d:5.529331922531128;s:8:"messages";a:138:{i:10;a:6:{i:0;s:55:"Opening DB connection: mysql:host=localhost;dbname=book";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1671441602.039213;i:4;a:0:{}i:5;i:4424448;}i:11;a:6:{i:0;s:55:"Opening DB connection: mysql:host=localhost;dbname=book";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1671441602.056416;i:4;a:0:{}i:5;i:4467296;}i:12;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.056437;i:4;a:0:{}i:5;i:4468152;}i:13;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.058616;i:4;a:0:{}i:5;i:4469216;}i:15;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `category`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.059398;i:4;a:0:{}i:5;i:4477264;}i:16;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `category`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.061609;i:4;a:0:{}i:5;i:4480368;}i:18;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'category' AND `kcu`.`TABLE_NAME` = 'category'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.06326;i:4;a:0:{}i:5;i:4506056;}i:19;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'category' AND `kcu`.`TABLE_NAME` = 'category'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.101488;i:4;a:0:{}i:5;i:4507480;}i:21;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `comment`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.101598;i:4;a:0:{}i:5;i:4506880;}i:22;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `comment`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.103519;i:4;a:0:{}i:5;i:4511440;}i:24;a:6:{i:0;s:770:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'comment' AND `kcu`.`TABLE_NAME` = 'comment'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.103706;i:4;a:0:{}i:5;i:4512512;}i:25;a:6:{i:0;s:770:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'comment' AND `kcu`.`TABLE_NAME` = 'comment'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.105687;i:4;a:0:{}i:5;i:4515280;}i:27;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.105802;i:4;a:0:{}i:5;i:4514360;}i:28;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.108075;i:4;a:0:{}i:5;i:4517128;}i:30;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.108246;i:4;a:0:{}i:5;i:4519232;}i:31;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.110404;i:4;a:0:{}i:5;i:4520656;}i:33;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `post`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.11052;i:4;a:0:{}i:5;i:4520952;}i:34;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `post`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.112946;i:4;a:0:{}i:5;i:4529032;}i:36;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post' AND `kcu`.`TABLE_NAME` = 'post'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.113178;i:4;a:0:{}i:5;i:4528152;}i:37;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post' AND `kcu`.`TABLE_NAME` = 'post'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.115165;i:4;a:0:{}i:5;i:4530928;}i:39;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `post_tag`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.115277;i:4;a:0:{}i:5;i:4530008;}i:40;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `post_tag`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.1172;i:4;a:0:{}i:5;i:4533664;}i:42;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post_tag' AND `kcu`.`TABLE_NAME` = 'post_tag'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.117377;i:4;a:0:{}i:5;i:4535248;}i:43;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post_tag' AND `kcu`.`TABLE_NAME` = 'post_tag'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.119336;i:4;a:0:{}i:5;i:4538000;}i:45;a:6:{i:0;s:28:"SHOW FULL COLUMNS FROM `tag`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.119451;i:4;a:0:{}i:5;i:4537072;}i:46;a:6:{i:0;s:28:"SHOW FULL COLUMNS FROM `tag`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.121346;i:4;a:0:{}i:5;i:4539872;}i:48;a:6:{i:0;s:762:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tag' AND `kcu`.`TABLE_NAME` = 'tag'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.12153;i:4;a:0:{}i:5;i:4541936;}i:49;a:6:{i:0;s:762:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tag' AND `kcu`.`TABLE_NAME` = 'tag'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.123438;i:4;a:0:{}i:5;i:4543360;}i:51;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.123546;i:4;a:0:{}i:5;i:4542376;}i:52;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.12637;i:4;a:0:{}i:5;i:4547856;}i:54;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user' AND `kcu`.`TABLE_NAME` = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.12666;i:4;a:0:{}i:5;i:4548432;}i:55;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user' AND `kcu`.`TABLE_NAME` = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.128665;i:4;a:0:{}i:5;i:4549856;}i:57;a:6:{i:0;s:56:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post-user_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.136484;i:4;a:0:{}i:5;i:4906672;}i:58;a:6:{i:0;s:56:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post-user_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.149434;i:4;a:0:{}i:5;i:4907096;}i:60;a:6:{i:0;s:51:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.149803;i:4;a:0:{}i:5;i:4906832;}i:61;a:6:{i:0;s:51:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.16081;i:4;a:0:{}i:5;i:4907216;}i:63;a:6:{i:0;s:49:"ALTER TABLE `post` DROP FOREIGN KEY `category_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.161134;i:4;a:0:{}i:5;i:4908112;}i:64;a:6:{i:0;s:49:"ALTER TABLE `post` DROP FOREIGN KEY `category_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.187745;i:4;a:0:{}i:5;i:4908496;}i:66;a:6:{i:0;s:45:"ALTER TABLE `post` DROP FOREIGN KEY `user_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.188107;i:4;a:0:{}i:5;i:4914616;}i:67;a:6:{i:0;s:45:"ALTER TABLE `post` DROP FOREIGN KEY `user_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.20683;i:4;a:0:{}i:5;i:4915000;}i:69;a:6:{i:0;s:49:"ALTER TABLE `post_tag` DROP FOREIGN KEY `post_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.207266;i:4;a:0:{}i:5;i:4915904;}i:70;a:6:{i:0;s:49:"ALTER TABLE `post_tag` DROP FOREIGN KEY `post_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.219314;i:4;a:0:{}i:5;i:4916288;}i:72;a:6:{i:0;s:48:"ALTER TABLE `post_tag` DROP FOREIGN KEY `tag_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.219696;i:4;a:0:{}i:5;i:4916776;}i:73;a:6:{i:0;s:48:"ALTER TABLE `post_tag` DROP FOREIGN KEY `tag_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.233036;i:4;a:0:{}i:5;i:4917160;}i:75;a:6:{i:0;s:21:"DROP TABLE `category`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.234881;i:4;a:0:{}i:5;i:4917992;}i:76;a:6:{i:0;s:21:"DROP TABLE `category`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.271691;i:4;a:0:{}i:5;i:4918336;}i:78;a:6:{i:0;s:20:"DROP TABLE `comment`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.272003;i:4;a:0:{}i:5;i:4918752;}i:79;a:6:{i:0;s:20:"DROP TABLE `comment`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.282617;i:4;a:0:{}i:5;i:4919136;}i:81;a:6:{i:0;s:22:"DROP TABLE `migration`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.2829;i:4;a:0:{}i:5;i:4919968;}i:82;a:6:{i:0;s:22:"DROP TABLE `migration`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.292273;i:4;a:0:{}i:5;i:4920352;}i:84;a:6:{i:0;s:17:"DROP TABLE `post`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.292547;i:4;a:0:{}i:5;i:4920768;}i:85;a:6:{i:0;s:17:"DROP TABLE `post`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.307103;i:4;a:0:{}i:5;i:4921152;}i:87;a:6:{i:0;s:21:"DROP TABLE `post_tag`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.307375;i:4;a:0:{}i:5;i:4921944;}i:88;a:6:{i:0;s:21:"DROP TABLE `post_tag`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.317309;i:4;a:0:{}i:5;i:4922328;}i:90;a:6:{i:0;s:16:"DROP TABLE `tag`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.317715;i:4;a:0:{}i:5;i:4923152;}i:91;a:6:{i:0;s:16:"DROP TABLE `tag`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.331848;i:4;a:0:{}i:5;i:4923536;}i:93;a:6:{i:0;s:17:"DROP TABLE `user`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.332862;i:4;a:0:{}i:5;i:4923984;}i:94;a:6:{i:0;s:17:"DROP TABLE `user`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.348011;i:4;a:0:{}i:5;i:4924368;}i:96;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.349164;i:4;a:0:{}i:5;i:4903992;}i:97;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.351171;i:4;a:0:{}i:5;i:4930056;}i:99;a:6:{i:0;s:96:"CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.35157;i:4;a:0:{}i:5;i:4912392;}i:100;a:6:{i:0;s:96:"CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.447478;i:4;a:0:{}i:5;i:4912728;}i:102;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.447646;i:4;a:0:{}i:5;i:4914080;}i:103;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.450633;i:4;a:0:{}i:5;i:4916848;}i:105;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.450815;i:4;a:0:{}i:5;i:4918952;}i:106;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.464683;i:4;a:0:{}i:5;i:4920376;}i:108;a:6:{i:0;s:92:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1671441602)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.464816;i:4;a:0:{}i:5;i:4920000;}i:109;a:6:{i:0;s:92:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1671441602)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.466033;i:4;a:0:{}i:5;i:4920512;}i:111;a:6:{i:0;s:90:"SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.470432;i:4;a:0:{}i:5;i:5156888;}i:112;a:6:{i:0;s:90:"SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.47104;i:4;a:0:{}i:5;i:5158112;}i:114;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.476002;i:4;a:0:{}i:5;i:5248568;}i:115;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.478104;i:4;a:0:{}i:5;i:5251336;}i:117;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.478276;i:4;a:0:{}i:5;i:5253440;}i:118;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.480148;i:4;a:0:{}i:5;i:5254864;}i:121;a:6:{i:0;s:179:"CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(256),
+	`email` varchar(256),
+	`password` varchar(256),
+	`is_admin` int(11) DEFAULT 0
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.172726;i:4;a:0:{}i:5;i:5492408;}i:122;a:6:{i:0;s:179:"CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(256),
+	`email` varchar(256),
+	`password` varchar(256),
+	`is_admin` int(11) DEFAULT 0
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.347551;i:4;a:0:{}i:5;i:5492792;}i:125;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.349644;i:4;a:0:{}i:5;i:5494032;}i:126;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.351787;i:4;a:0:{}i:5;i:5496800;}i:128;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.351964;i:4;a:0:{}i:5;i:5498904;}i:129;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.353877;i:4;a:0:{}i:5;i:5504424;}i:131;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135215_create_user_table', 1671441603)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.354005;i:4;a:0:{}i:5;i:5504080;}i:132;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135215_create_user_table', 1671441603)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.355151;i:4;a:0:{}i:5;i:5504624;}i:135;a:6:{i:0;s:99:"CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.358858;i:4;a:0:{}i:5;i:5513584;}i:136;a:6:{i:0;s:99:"CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.450112;i:4;a:0:{}i:5;i:5513968;}i:139;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.450541;i:4;a:0:{}i:5;i:5515976;}i:140;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.45248;i:4;a:0:{}i:5;i:5518744;}i:142;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.452655;i:4;a:0:{}i:5;i:5520848;}i:143;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.454389;i:4;a:0:{}i:5;i:5522272;}i:145;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135317_create_category_table', 1671441603)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.454506;i:4;a:0:{}i:5;i:5521928;}i:146;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135317_create_category_table', 1671441603)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.455158;i:4;a:0:{}i:5;i:5522472;}i:149;a:6:{i:0;s:243:"CREATE TABLE `post` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(256),
+	`description` varchar(256),
+	`image` varchar(256),
+	`date` date,
+	`viewed` int(11),
+	`user_id` int(11) NOT NULL,
+	`category_id` int(11) NOT NULL
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.457633;i:4;a:0:{}i:5;i:5536352;}i:150;a:6:{i:0;s:243:"CREATE TABLE `post` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(256),
+	`description` varchar(256),
+	`image` varchar(256),
+	`date` date,
+	`viewed` int(11),
+	`user_id` int(11) NOT NULL,
+	`category_id` int(11) NOT NULL
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.56991;i:4;a:0:{}i:5;i:5536736;}i:152;a:6:{i:0;s:104:"ALTER TABLE `post` ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.57133;i:4;a:0:{}i:5;i:5535272;}i:153;a:6:{i:0;s:104:"ALTER TABLE `post` ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.756162;i:4;a:0:{}i:5;i:5535696;}i:155;a:6:{i:0;s:92:"ALTER TABLE `post` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.758005;i:4;a:0:{}i:5;i:5536568;}i:156;a:6:{i:0;s:92:"ALTER TABLE `post` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.965009;i:4;a:0:{}i:5;i:5536952;}i:159;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.965412;i:4;a:0:{}i:5;i:5539792;}i:160;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.967748;i:4;a:0:{}i:5;i:5542520;}i:162;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.967922;i:4;a:0:{}i:5;i:5544624;}i:163;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.969701;i:4;a:0:{}i:5;i:5546048;}i:165;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135336_create_post_table', 1671441603)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.969818;i:4;a:0:{}i:5;i:5545704;}i:166;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135336_create_post_table', 1671441603)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.970458;i:4;a:0:{}i:5;i:5546248;}i:169;a:6:{i:0;s:94:"CREATE TABLE `tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.972528;i:4;a:0:{}i:5;i:5555776;}i:170;a:6:{i:0;s:94:"CREATE TABLE `tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.075327;i:4;a:0:{}i:5;i:5556160;}i:173;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.075983;i:4;a:0:{}i:5;i:5558168;}i:174;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.078288;i:4;a:0:{}i:5;i:5560936;}i:176;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.078469;i:4;a:0:{}i:5;i:5563040;}i:177;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.080376;i:4;a:0:{}i:5;i:5564464;}i:179;a:6:{i:0;s:104:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135350_create_tag_table', 1671441604)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.080496;i:4;a:0:{}i:5;i:5564120;}i:180;a:6:{i:0;s:104:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135350_create_tag_table', 1671441604)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.081108;i:4;a:0:{}i:5;i:5564664;}i:183;a:6:{i:0;s:138:"CREATE TABLE `comment` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`text` varchar(256),
+	`user_id` int(11),
+	`post_id` int(11)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.08339;i:4;a:0:{}i:5;i:5576344;}i:184;a:6:{i:0;s:138:"CREATE TABLE `comment` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`text` varchar(256),
+	`user_id` int(11),
+	`post_id` int(11)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.183566;i:4;a:0:{}i:5;i:5576728;}i:186;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-user_id` (`user_id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.185518;i:4;a:0:{}i:5;i:5576264;}i:187;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-user_id` (`user_id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.284327;i:4;a:0:{}i:5;i:5576688;}i:189;a:6:{i:0;s:121:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post-user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.285738;i:4;a:0:{}i:5;i:5577592;}i:190;a:6:{i:0;s:121:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post-user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.453967;i:4;a:0:{}i:5;i:5577976;}i:192;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-post_id` (`post_id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.455608;i:4;a:0:{}i:5;i:5578856;}i:193;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-post_id` (`post_id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.501308;i:4;a:0:{}i:5;i:5579240;}i:195;a:6:{i:0;s:116:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.502988;i:4;a:0:{}i:5;i:5580144;}i:196;a:6:{i:0;s:116:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.685844;i:4;a:0:{}i:5;i:5580528;}i:199;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.686282;i:4;a:0:{}i:5;i:5583368;}i:200;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.688612;i:4;a:0:{}i:5;i:5586096;}i:202;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.688785;i:4;a:0:{}i:5;i:5588200;}i:203;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.69057;i:4;a:0:{}i:5;i:5589624;}i:205;a:6:{i:0;s:108:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135402_create_comment_table', 1671441604)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.690686;i:4;a:0:{}i:5;i:5589280;}i:206;a:6:{i:0;s:108:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135402_create_comment_table', 1671441604)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.691324;i:4;a:0:{}i:5;i:5589824;}i:209;a:6:{i:0;s:116:"CREATE TABLE `post_tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`post_id` int(11),
+	`tag_id` int(11)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.693441;i:4;a:0:{}i:5;i:5602568;}i:210;a:6:{i:0;s:116:"CREATE TABLE `post_tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`post_id` int(11),
+	`tag_id` int(11)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.80249;i:4;a:0:{}i:5;i:5602952;}i:212;a:6:{i:0;s:96:"ALTER TABLE `post_tag` ADD CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.803904;i:4;a:0:{}i:5;i:5602736;}i:213;a:6:{i:0;s:96:"ALTER TABLE `post_tag` ADD CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.904201;i:4;a:0:{}i:5;i:5603160;}i:215;a:6:{i:0;s:93:"ALTER TABLE `post_tag` ADD CONSTRAINT `tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.905604;i:4;a:0:{}i:5;i:5604032;}i:216;a:6:{i:0;s:93:"ALTER TABLE `post_tag` ADD CONSTRAINT `tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.075926;i:4;a:0:{}i:5;i:5604416;}i:219;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.077528;i:4;a:0:{}i:5;i:5607256;}i:220;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.079838;i:4;a:0:{}i:5;i:5609984;}i:222;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.080024;i:4;a:0:{}i:5;i:5612088;}i:223;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.081901;i:4;a:0:{}i:5;i:5613512;}i:225;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221213_130942_create_post_tag_table', 1671441605)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.082025;i:4;a:0:{}i:5;i:5613168;}i:226;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221213_130942_create_post_tag_table', 1671441605)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.082683;i:4;a:0:{}i:5;i:5613712;}}}";s:2:"db";s:45771:"a:1:{s:8:"messages";a:136:{i:12;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.056437;i:4;a:0:{}i:5;i:4468152;}i:13;a:6:{i:0;s:11:"SHOW TABLES";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.058616;i:4;a:0:{}i:5;i:4469216;}i:15;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `category`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.059398;i:4;a:0:{}i:5;i:4477264;}i:16;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `category`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.061609;i:4;a:0:{}i:5;i:4480368;}i:18;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'category' AND `kcu`.`TABLE_NAME` = 'category'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.06326;i:4;a:0:{}i:5;i:4506056;}i:19;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'category' AND `kcu`.`TABLE_NAME` = 'category'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.101488;i:4;a:0:{}i:5;i:4507480;}i:21;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `comment`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.101598;i:4;a:0:{}i:5;i:4506880;}i:22;a:6:{i:0;s:32:"SHOW FULL COLUMNS FROM `comment`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.103519;i:4;a:0:{}i:5;i:4511440;}i:24;a:6:{i:0;s:770:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'comment' AND `kcu`.`TABLE_NAME` = 'comment'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.103706;i:4;a:0:{}i:5;i:4512512;}i:25;a:6:{i:0;s:770:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'comment' AND `kcu`.`TABLE_NAME` = 'comment'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.105687;i:4;a:0:{}i:5;i:4515280;}i:27;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.105802;i:4;a:0:{}i:5;i:4514360;}i:28;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.108075;i:4;a:0:{}i:5;i:4517128;}i:30;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.108246;i:4;a:0:{}i:5;i:4519232;}i:31;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.110404;i:4;a:0:{}i:5;i:4520656;}i:33;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `post`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.11052;i:4;a:0:{}i:5;i:4520952;}i:34;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `post`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.112946;i:4;a:0:{}i:5;i:4529032;}i:36;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post' AND `kcu`.`TABLE_NAME` = 'post'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.113178;i:4;a:0:{}i:5;i:4528152;}i:37;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post' AND `kcu`.`TABLE_NAME` = 'post'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.115165;i:4;a:0:{}i:5;i:4530928;}i:39;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `post_tag`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.115277;i:4;a:0:{}i:5;i:4530008;}i:40;a:6:{i:0;s:33:"SHOW FULL COLUMNS FROM `post_tag`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.1172;i:4;a:0:{}i:5;i:4533664;}i:42;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post_tag' AND `kcu`.`TABLE_NAME` = 'post_tag'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.117377;i:4;a:0:{}i:5;i:4535248;}i:43;a:6:{i:0;s:772:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'post_tag' AND `kcu`.`TABLE_NAME` = 'post_tag'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.119336;i:4;a:0:{}i:5;i:4538000;}i:45;a:6:{i:0;s:28:"SHOW FULL COLUMNS FROM `tag`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.119451;i:4;a:0:{}i:5;i:4537072;}i:46;a:6:{i:0;s:28:"SHOW FULL COLUMNS FROM `tag`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.121346;i:4;a:0:{}i:5;i:4539872;}i:48;a:6:{i:0;s:762:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tag' AND `kcu`.`TABLE_NAME` = 'tag'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.12153;i:4;a:0:{}i:5;i:4541936;}i:49;a:6:{i:0;s:762:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'tag' AND `kcu`.`TABLE_NAME` = 'tag'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.123438;i:4;a:0:{}i:5;i:4543360;}i:51;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.123546;i:4;a:0:{}i:5;i:4542376;}i:52;a:6:{i:0;s:29:"SHOW FULL COLUMNS FROM `user`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.12637;i:4;a:0:{}i:5;i:4547856;}i:54;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user' AND `kcu`.`TABLE_NAME` = 'user'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.12666;i:4;a:0:{}i:5;i:4548432;}i:55;a:6:{i:0;s:764:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'user' AND `kcu`.`TABLE_NAME` = 'user'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.128665;i:4;a:0:{}i:5;i:4549856;}i:57;a:6:{i:0;s:56:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post-user_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.136484;i:4;a:0:{}i:5;i:4906672;}i:58;a:6:{i:0;s:56:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post-user_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.149434;i:4;a:0:{}i:5;i:4907096;}i:60;a:6:{i:0;s:51:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.149803;i:4;a:0:{}i:5;i:4906832;}i:61;a:6:{i:0;s:51:"ALTER TABLE `comment` DROP FOREIGN KEY `fk-post_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.16081;i:4;a:0:{}i:5;i:4907216;}i:63;a:6:{i:0;s:49:"ALTER TABLE `post` DROP FOREIGN KEY `category_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.161134;i:4;a:0:{}i:5;i:4908112;}i:64;a:6:{i:0;s:49:"ALTER TABLE `post` DROP FOREIGN KEY `category_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.187745;i:4;a:0:{}i:5;i:4908496;}i:66;a:6:{i:0;s:45:"ALTER TABLE `post` DROP FOREIGN KEY `user_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.188107;i:4;a:0:{}i:5;i:4914616;}i:67;a:6:{i:0;s:45:"ALTER TABLE `post` DROP FOREIGN KEY `user_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.20683;i:4;a:0:{}i:5;i:4915000;}i:69;a:6:{i:0;s:49:"ALTER TABLE `post_tag` DROP FOREIGN KEY `post_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.207266;i:4;a:0:{}i:5;i:4915904;}i:70;a:6:{i:0;s:49:"ALTER TABLE `post_tag` DROP FOREIGN KEY `post_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.219314;i:4;a:0:{}i:5;i:4916288;}i:72;a:6:{i:0;s:48:"ALTER TABLE `post_tag` DROP FOREIGN KEY `tag_id`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.219696;i:4;a:0:{}i:5;i:4916776;}i:73;a:6:{i:0;s:48:"ALTER TABLE `post_tag` DROP FOREIGN KEY `tag_id`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.233036;i:4;a:0:{}i:5;i:4917160;}i:75;a:6:{i:0;s:21:"DROP TABLE `category`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.234881;i:4;a:0:{}i:5;i:4917992;}i:76;a:6:{i:0;s:21:"DROP TABLE `category`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.271691;i:4;a:0:{}i:5;i:4918336;}i:78;a:6:{i:0;s:20:"DROP TABLE `comment`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.272003;i:4;a:0:{}i:5;i:4918752;}i:79;a:6:{i:0;s:20:"DROP TABLE `comment`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.282617;i:4;a:0:{}i:5;i:4919136;}i:81;a:6:{i:0;s:22:"DROP TABLE `migration`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.2829;i:4;a:0:{}i:5;i:4919968;}i:82;a:6:{i:0;s:22:"DROP TABLE `migration`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.292273;i:4;a:0:{}i:5;i:4920352;}i:84;a:6:{i:0;s:17:"DROP TABLE `post`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.292547;i:4;a:0:{}i:5;i:4920768;}i:85;a:6:{i:0;s:17:"DROP TABLE `post`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.307103;i:4;a:0:{}i:5;i:4921152;}i:87;a:6:{i:0;s:21:"DROP TABLE `post_tag`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.307375;i:4;a:0:{}i:5;i:4921944;}i:88;a:6:{i:0;s:21:"DROP TABLE `post_tag`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.317309;i:4;a:0:{}i:5;i:4922328;}i:90;a:6:{i:0;s:16:"DROP TABLE `tag`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.317715;i:4;a:0:{}i:5;i:4923152;}i:91;a:6:{i:0;s:16:"DROP TABLE `tag`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.331848;i:4;a:0:{}i:5;i:4923536;}i:93;a:6:{i:0;s:17:"DROP TABLE `user`";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.332862;i:4;a:0:{}i:5;i:4923984;}i:94;a:6:{i:0;s:17:"DROP TABLE `user`";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.348011;i:4;a:0:{}i:5;i:4924368;}i:96;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.349164;i:4;a:0:{}i:5;i:4903992;}i:97;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.351171;i:4;a:0:{}i:5;i:4930056;}i:99;a:6:{i:0;s:96:"CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.35157;i:4;a:0:{}i:5;i:4912392;}i:100;a:6:{i:0;s:96:"CREATE TABLE `migration` (
+	`version` varchar(180) NOT NULL PRIMARY KEY,
+	`apply_time` int(11)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.447478;i:4;a:0:{}i:5;i:4912728;}i:102;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.447646;i:4;a:0:{}i:5;i:4914080;}i:103;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.450633;i:4;a:0:{}i:5;i:4916848;}i:105;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.450815;i:4;a:0:{}i:5;i:4918952;}i:106;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.464683;i:4;a:0:{}i:5;i:4920376;}i:108;a:6:{i:0;s:92:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1671441602)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.464816;i:4;a:0:{}i:5;i:4920000;}i:109;a:6:{i:0;s:92:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m000000_000000_base', 1671441602)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441602.466033;i:4;a:0:{}i:5;i:4920512;}i:111;a:6:{i:0;s:90:"SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.470432;i:4;a:0:{}i:5;i:5156888;}i:112;a:6:{i:0;s:90:"SELECT `version`, `apply_time` FROM `migration` ORDER BY `apply_time` DESC, `version` DESC";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.47104;i:4;a:0:{}i:5;i:5158112;}i:114;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.476002;i:4;a:0:{}i:5;i:5248568;}i:115;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.478104;i:4;a:0:{}i:5;i:5251336;}i:117;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.478276;i:4;a:0:{}i:5;i:5253440;}i:118;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441602.480148;i:4;a:0:{}i:5;i:5254864;}i:121;a:6:{i:0;s:179:"CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(256),
+	`email` varchar(256),
+	`password` varchar(256),
+	`is_admin` int(11) DEFAULT 0
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.172726;i:4;a:0:{}i:5;i:5492408;}i:122;a:6:{i:0;s:179:"CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(256),
+	`email` varchar(256),
+	`password` varchar(256),
+	`is_admin` int(11) DEFAULT 0
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.347551;i:4;a:0:{}i:5;i:5492792;}i:125;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.349644;i:4;a:0:{}i:5;i:5494032;}i:126;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.351787;i:4;a:0:{}i:5;i:5496800;}i:128;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.351964;i:4;a:0:{}i:5;i:5498904;}i:129;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.353877;i:4;a:0:{}i:5;i:5504424;}i:131;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135215_create_user_table', 1671441603)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.354005;i:4;a:0:{}i:5;i:5504080;}i:132;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135215_create_user_table', 1671441603)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.355151;i:4;a:0:{}i:5;i:5504624;}i:135;a:6:{i:0;s:99:"CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.358858;i:4;a:0:{}i:5;i:5513584;}i:136;a:6:{i:0;s:99:"CREATE TABLE `category` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.450112;i:4;a:0:{}i:5;i:5513968;}i:139;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.450541;i:4;a:0:{}i:5;i:5515976;}i:140;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.45248;i:4;a:0:{}i:5;i:5518744;}i:142;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.452655;i:4;a:0:{}i:5;i:5520848;}i:143;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.454389;i:4;a:0:{}i:5;i:5522272;}i:145;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135317_create_category_table', 1671441603)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.454506;i:4;a:0:{}i:5;i:5521928;}i:146;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135317_create_category_table', 1671441603)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.455158;i:4;a:0:{}i:5;i:5522472;}i:149;a:6:{i:0;s:243:"CREATE TABLE `post` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(256),
+	`description` varchar(256),
+	`image` varchar(256),
+	`date` date,
+	`viewed` int(11),
+	`user_id` int(11) NOT NULL,
+	`category_id` int(11) NOT NULL
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.457633;i:4;a:0:{}i:5;i:5536352;}i:150;a:6:{i:0;s:243:"CREATE TABLE `post` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`title` varchar(256),
+	`description` varchar(256),
+	`image` varchar(256),
+	`date` date,
+	`viewed` int(11),
+	`user_id` int(11) NOT NULL,
+	`category_id` int(11) NOT NULL
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.56991;i:4;a:0:{}i:5;i:5536736;}i:152;a:6:{i:0;s:104:"ALTER TABLE `post` ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.57133;i:4;a:0:{}i:5;i:5535272;}i:153;a:6:{i:0;s:104:"ALTER TABLE `post` ADD CONSTRAINT `category_id` FOREIGN KEY (`category_id`) REFERENCES `category` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.756162;i:4;a:0:{}i:5;i:5535696;}i:155;a:6:{i:0;s:92:"ALTER TABLE `post` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.758005;i:4;a:0:{}i:5;i:5536568;}i:156;a:6:{i:0;s:92:"ALTER TABLE `post` ADD CONSTRAINT `user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.965009;i:4;a:0:{}i:5;i:5536952;}i:159;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.965412;i:4;a:0:{}i:5;i:5539792;}i:160;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.967748;i:4;a:0:{}i:5;i:5542520;}i:162;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.967922;i:4;a:0:{}i:5;i:5544624;}i:163;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441603.969701;i:4;a:0:{}i:5;i:5546048;}i:165;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135336_create_post_table', 1671441603)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.969818;i:4;a:0:{}i:5;i:5545704;}i:166;a:6:{i:0;s:105:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135336_create_post_table', 1671441603)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.970458;i:4;a:0:{}i:5;i:5546248;}i:169;a:6:{i:0;s:94:"CREATE TABLE `tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441603.972528;i:4;a:0:{}i:5;i:5555776;}i:170;a:6:{i:0;s:94:"CREATE TABLE `tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`name` varchar(256)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.075327;i:4;a:0:{}i:5;i:5556160;}i:173;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.075983;i:4;a:0:{}i:5;i:5558168;}i:174;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.078288;i:4;a:0:{}i:5;i:5560936;}i:176;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.078469;i:4;a:0:{}i:5;i:5563040;}i:177;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.080376;i:4;a:0:{}i:5;i:5564464;}i:179;a:6:{i:0;s:104:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135350_create_tag_table', 1671441604)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.080496;i:4;a:0:{}i:5;i:5564120;}i:180;a:6:{i:0;s:104:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135350_create_tag_table', 1671441604)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.081108;i:4;a:0:{}i:5;i:5564664;}i:183;a:6:{i:0;s:138:"CREATE TABLE `comment` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`text` varchar(256),
+	`user_id` int(11),
+	`post_id` int(11)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.08339;i:4;a:0:{}i:5;i:5576344;}i:184;a:6:{i:0;s:138:"CREATE TABLE `comment` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`text` varchar(256),
+	`user_id` int(11),
+	`post_id` int(11)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.183566;i:4;a:0:{}i:5;i:5576728;}i:186;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-user_id` (`user_id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.185518;i:4;a:0:{}i:5;i:5576264;}i:187;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-user_id` (`user_id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.284327;i:4;a:0:{}i:5;i:5576688;}i:189;a:6:{i:0;s:121:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post-user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.285738;i:4;a:0:{}i:5;i:5577592;}i:190;a:6:{i:0;s:121:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post-user_id` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.453967;i:4;a:0:{}i:5;i:5577976;}i:192;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-post_id` (`post_id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.455608;i:4;a:0:{}i:5;i:5578856;}i:193;a:6:{i:0;s:57:"ALTER TABLE `comment` ADD INDEX `idx-post_id` (`post_id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.501308;i:4;a:0:{}i:5;i:5579240;}i:195;a:6:{i:0;s:116:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.502988;i:4;a:0:{}i:5;i:5580144;}i:196;a:6:{i:0;s:116:"ALTER TABLE `comment` ADD CONSTRAINT `fk-post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`) ON DELETE CASCADE";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.685844;i:4;a:0:{}i:5;i:5580528;}i:199;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.686282;i:4;a:0:{}i:5;i:5583368;}i:200;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.688612;i:4;a:0:{}i:5;i:5586096;}i:202;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.688785;i:4;a:0:{}i:5;i:5588200;}i:203;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441604.69057;i:4;a:0:{}i:5;i:5589624;}i:205;a:6:{i:0;s:108:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135402_create_comment_table', 1671441604)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.690686;i:4;a:0:{}i:5;i:5589280;}i:206;a:6:{i:0;s:108:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221206_135402_create_comment_table', 1671441604)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.691324;i:4;a:0:{}i:5;i:5589824;}i:209;a:6:{i:0;s:116:"CREATE TABLE `post_tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`post_id` int(11),
+	`tag_id` int(11)
+)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.693441;i:4;a:0:{}i:5;i:5602568;}i:210;a:6:{i:0;s:116:"CREATE TABLE `post_tag` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`post_id` int(11),
+	`tag_id` int(11)
+)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.80249;i:4;a:0:{}i:5;i:5602952;}i:212;a:6:{i:0;s:96:"ALTER TABLE `post_tag` ADD CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.803904;i:4;a:0:{}i:5;i:5602736;}i:213;a:6:{i:0;s:96:"ALTER TABLE `post_tag` ADD CONSTRAINT `post_id` FOREIGN KEY (`post_id`) REFERENCES `post` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.904201;i:4;a:0:{}i:5;i:5603160;}i:215;a:6:{i:0;s:93:"ALTER TABLE `post_tag` ADD CONSTRAINT `tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441604.905604;i:4;a:0:{}i:5;i:5604032;}i:216;a:6:{i:0;s:93:"ALTER TABLE `post_tag` ADD CONSTRAINT `tag_id` FOREIGN KEY (`tag_id`) REFERENCES `tag` (`id`)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.075926;i:4;a:0:{}i:5;i:5604416;}i:219;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.077528;i:4;a:0:{}i:5;i:5607256;}i:220;a:6:{i:0;s:34:"SHOW FULL COLUMNS FROM `migration`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.079838;i:4;a:0:{}i:5;i:5609984;}i:222;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.080024;i:4;a:0:{}i:5;i:5612088;}i:223;a:6:{i:0;s:774:"SELECT
+    `kcu`.`CONSTRAINT_NAME` AS `constraint_name`,
+    `kcu`.`COLUMN_NAME` AS `column_name`,
+    `kcu`.`REFERENCED_TABLE_NAME` AS `referenced_table_name`,
+    `kcu`.`REFERENCED_COLUMN_NAME` AS `referenced_column_name`
+FROM `information_schema`.`REFERENTIAL_CONSTRAINTS` AS `rc`
+JOIN `information_schema`.`KEY_COLUMN_USAGE` AS `kcu` ON
+    (
+        `kcu`.`CONSTRAINT_CATALOG` = `rc`.`CONSTRAINT_CATALOG` OR
+        (`kcu`.`CONSTRAINT_CATALOG` IS NULL AND `rc`.`CONSTRAINT_CATALOG` IS NULL)
+    ) AND
+    `kcu`.`CONSTRAINT_SCHEMA` = `rc`.`CONSTRAINT_SCHEMA` AND
+    `kcu`.`CONSTRAINT_NAME` = `rc`.`CONSTRAINT_NAME`
+WHERE `rc`.`CONSTRAINT_SCHEMA` = database() AND `kcu`.`TABLE_SCHEMA` = database()
+AND `rc`.`TABLE_NAME` = 'migration' AND `kcu`.`TABLE_NAME` = 'migration'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1671441605.081901;i:4;a:0:{}i:5;i:5613512;}i:225;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221213_130942_create_post_tag_table', 1671441605)";i:1;i:80;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.082025;i:4;a:0:{}i:5;i:5613168;}i:226;a:6:{i:0;s:109:"INSERT INTO `migration` (`version`, `apply_time`) VALUES ('m221213_130942_create_post_tag_table', 1671441605)";i:1;i:96;i:2;s:23:"yii\db\Command::execute";i:3;d:1671441605.082683;i:4;a:0:{}i:5;i:5613712;}}}";s:5:"event";s:3446:"a:19:{i:0;a:5:{s:4:"time";d:1671441600.336016;s:4:"name";s:13:"beforeRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"yii\console\Application";}i:1;a:5:{s:4:"time";d:1671441600.351096;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"yii\console\Application";}i:2;a:5:{s:4:"time";d:1671441600.351135;s:4:"name";s:12:"beforeAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:41:"yii\console\controllers\MigrateController";}i:3;a:5:{s:4:"time";d:1671441602.0564;s:4:"name";s:9:"afterOpen";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:4;a:5:{s:4:"time";d:1671441603.170278;s:4:"name";s:16:"beginTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:5;a:5:{s:4:"time";d:1671441603.349524;s:4:"name";s:17:"commitTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:6;a:5:{s:4:"time";d:1671441603.358194;s:4:"name";s:16:"beginTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:7;a:5:{s:4:"time";d:1671441603.450427;s:4:"name";s:17:"commitTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:8;a:5:{s:4:"time";d:1671441603.456983;s:4:"name";s:16:"beginTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:9;a:5:{s:4:"time";d:1671441603.965293;s:4:"name";s:17:"commitTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:10;a:5:{s:4:"time";d:1671441603.971889;s:4:"name";s:16:"beginTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:11;a:5:{s:4:"time";d:1671441604.075848;s:4:"name";s:17:"commitTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:12;a:5:{s:4:"time";d:1671441604.082728;s:4:"name";s:16:"beginTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:13;a:5:{s:4:"time";d:1671441604.686168;s:4:"name";s:17:"commitTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:14;a:5:{s:4:"time";d:1671441604.692784;s:4:"name";s:16:"beginTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:15;a:5:{s:4:"time";d:1671441605.077392;s:4:"name";s:17:"commitTransaction";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:17:"yii\db\Connection";}i:16;a:5:{s:4:"time";d:1671441605.084782;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:41:"yii\console\controllers\MigrateController";}i:17;a:5:{s:4:"time";d:1671441605.084805;s:4:"name";s:11:"afterAction";s:5:"class";s:20:"yii\base\ActionEvent";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"yii\console\Application";}i:18;a:5:{s:4:"time";d:1671441605.084826;s:4:"name";s:12:"afterRequest";s:5:"class";s:14:"yii\base\Event";s:8:"isStatic";s:1:"0";s:11:"senderClass";s:23:"yii\console\Application";}}";s:4:"mail";s:6:"a:0:{}";s:8:"timeline";s:91:"a:3:{s:5:"start";d:1671441600.288805;s:3:"end";d:1671441605.819568;s:6:"memory";i:5667864;}";s:4:"dump";s:6:"a:0:{}";s:7:"summary";a:12:{s:3:"tag";s:13:"63a02cc0507fe";s:3:"url";s:21:"php yii migrate/fresh";s:4:"ajax";i:0;s:6:"method";s:7:"COMMAND";s:2:"ip";s:17:"dziuba2021\dziuba";s:4:"time";d:1671441600.262308;s:10:"statusCode";i:0;s:8:"sqlCount";i:68;s:9:"mailCount";i:0;s:9:"mailFiles";a:0:{}s:10:"peakMemory";i:5667864;s:14:"processingTime";d:5.529331922531128;}s:10:"exceptions";a:0:{}}
